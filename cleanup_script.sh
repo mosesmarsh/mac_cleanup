@@ -27,7 +27,7 @@ yes | conda install psycopg2
 
 #Remove sublime
 echo "Removing sublime."
-rm /Applications/Sublime\ Text*app
+rm -rf /Applications/Sublime\ Text*app
 
 #brew uninstall spark
 echo "Uninstall spark"
