@@ -5,6 +5,8 @@ echo "Clearing out Desktop"
 rm -rf ~/Desktop/*
 echo "Clearing Downloads"
 rm -rf ~/Downloads/*
+echo "Clearing mongodb data"
+sudo rm -rf /data/db
 echo "Clean up home directory"
 shopt -s extglob
 cd ~
