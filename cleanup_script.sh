@@ -51,4 +51,5 @@ curl -O http://d3kbcqa49mib13.cloudfront.net/spark-1.5.1-bin-hadoop1.tgz
 tar -xzf spark-1.5.1-bin-hadoop1.tgz -C /usr/local/
 ln -s /usr/local/spark-1.5.1-bin-hadoop1/ /usr/local/spark
 
-
+#get prepped for statsmodels
+xcode-select --install
