@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Clean up time!"
 echo "Clearing out Documents"
 rm -rf ~/Documents/*
