@@ -18,7 +18,7 @@ echo "Updating brew"
 sudo chown gSchool:admin /usr/local
 brew update
 
-echo "check shell"
+echo "Update shell"
 chsh -s /usr/local/bin/bash
 
 #Install conda.
