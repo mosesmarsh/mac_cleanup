@@ -13,12 +13,13 @@ cd ~
 sudo rm -rdf !(Applications|Library|Desktop|Documents|Downloads|Pictures|Public|mac_cleanup)
 cd -
 
-#update xcode?
-
 #update brew
 echo "Updating brew"
 sudo chown gSchool:admin /usr/local
 brew update
+
+echo "check shell"
+chsh -s /usr/local/bin/bash
 
 #Install conda.
 echo "Fresly installing anaconda"
