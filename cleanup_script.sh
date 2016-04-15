@@ -20,7 +20,7 @@ sudo chown gSchool:admin /usr/local
 brew update
 
 echo "Update shell"
-chsh -s /usr/local/bin/bash
+chsh -s /bin/bash
 
 #Install conda.
 echo "Fresly installing anaconda"
