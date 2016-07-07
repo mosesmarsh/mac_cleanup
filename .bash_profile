@@ -10,7 +10,7 @@ export PATH="/Users/datascientist/anaconda2/bin:$PATH"
 
 # Add Spark to the path
 export SPARK_HOME=/usr/local/spark
-export PATH=$SPARK_HOME/bin:$PATH
+export PATH="$SPARK_HOME/bin:$PATH"
 
 # Make Python aware of Spark
-export PYTHON_PATH=$PYTHON_PATH:$SPARK_HOME/python
+export PYTHONPATH="$PYTHONPATH:$SPARK_HOME/python"
