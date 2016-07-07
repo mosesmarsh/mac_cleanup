@@ -1,17 +1,16 @@
-
-# added by Anaconda 2.1.0 installer
+# Add Postgres to the path
 export PATH="/Users/datascientist/Applications/Postgres.app/Contents/Versions/9.4/bin/:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+
+# Add Homebrew stuff to the path
 export PATH="/usr/local/bin:$PATH"
 
-
-# added by Anaconda2 2.4.1 installer
+# Add Anaconda to the path
 export PATH="/Users/datascientist/anaconda2/bin:$PATH"
 
-#Spark path stuff.
+# Add Spark to the path
 export SPARK_HOME=/usr/local/spark
 export PATH=$SPARK_HOME/bin:$PATH
 
+# Make Python aware of Spark
 export PYTHON_PATH=$PYTHON_PATH:$SPARK_HOME/python
-
-source ~/.bashrc
