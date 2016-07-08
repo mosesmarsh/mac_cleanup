@@ -12,5 +12,5 @@ export PATH="/Users/datascientist/anaconda2/bin:$PATH"
 export SPARK_HOME=/usr/local/spark
 export PATH="$SPARK_HOME/bin:$PATH"
 
-# Make Python aware of Spark
-export PYTHONPATH="$PYTHONPATH:$SPARK_HOME/python"
+# Make Python aware of Spark (& Spark's py4j)
+export PYTHONPATH="$PYTHONPATH:$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip"
