@@ -62,3 +62,10 @@ sudo rm -rf /usr/local/spark*
 echo "Fresh install spark"
 brew install hadoop
 brew install apache-spark
+
+# Add Spark to the path
+echo 'export SPARK_HOME=`brew info apache-spark | grep /usr | tail -n 1 | cut -f 1 -d " "`/libexec' >> ~/.bash_profile
+echo 'export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH' >> ~/.bash_profile
+echo 'export HADOOP_HOME=`brew info hadoop | grep /usr | head -n 1 | cut -f 1 -d " "`/libexec' >> ~/.bash_profile
+echo 'export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native/:$LD_LIBRARY_PATH' >> ~/.bash_profile
+
