@@ -50,6 +50,7 @@ rm ~/Desktop/Launcher.app
 
 source ~/.bash_profile
 
+pip install py4j
 conda install --yes statsmodel
 
 #Install psycopg2
