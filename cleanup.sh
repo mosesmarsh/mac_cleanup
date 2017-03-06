@@ -45,7 +45,10 @@ echo 'export PATH="~/Applications/Postgres.app/Contents/Versions/latest/bin/:$PA
 
 # installing anaconda
 curl -L https://repo.continuum.io/archive/Anaconda2-4.3.0-MacOSX-x86_64.sh > anaconda_script.sh
-bash anaconda_script.sh -b -p $HOME/anaconda2
+bash anaconda_script.sh -b
+
+echo '# anaconda path' 
+echo 'export PATH="$HOME/anaconda2/bin:$PATH"' >> ~/.bash_profile
 
 rm ~/Desktop/Launcher.app
 
