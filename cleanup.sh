@@ -11,7 +11,8 @@ sudo rm -rf /data/db
 echo "Clean up home directory"
 shopt -s extglob
 cd ~
-mv .bash_profile .backup_bash_profile
+mv .bash_profile backup_bash_profile
+rm -rf ~/.*
 touch .bash_profile
 sudo rm -rdf !(Applications|Library|Desktop|Documents|Downloads|Pictures|Public|mac_cleanup)
 cd -
