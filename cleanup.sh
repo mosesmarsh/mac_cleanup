@@ -40,12 +40,12 @@ brew install wget
 
 #postgres
 brew cask install postgres
+echo '# Postgres path' >> ~/.bash_profile
 echo 'export PATH="~/Applications/Postgres.app/Contents/Versions/latest/bin/:$PATH"' >> ~/.bash_profile
 
 # installing anaconda
 curl -L https://repo.continuum.io/archive/Anaconda2-4.3.0-MacOSX-x86_64.sh > anaconda_script.sh
-bash anaconda_script.sh -b
-echo 'export PATH="/Users/datascientist/anaconda2/bin:$PATH"' >> ~/.bash_profile
+bash anaconda_script.sh -b -p
 
 rm ~/Desktop/Launcher.app
 
@@ -69,6 +69,7 @@ brew install hadoop
 brew install apache-spark
 
 # Add Spark to the path
+echo '# Spark paths' >> ~/.bash_profile
 echo 'export SPARK_HOME=`brew info apache-spark | grep /usr | tail -n 1 | cut -f 1 -d " "`/libexec' >> ~/.bash_profile
 echo 'export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH' >> ~/.bash_profile
 echo 'export HADOOP_HOME=`brew info hadoop | grep /usr | head -n 1 | cut -f 1 -d " "`/libexec' >> ~/.bash_profile
